@@ -22,7 +22,7 @@ function getNextDates() {
  const label = DIAS[dow - 1];
  const iso = d.toISOString().slice(0, 10);
  const parts = iso.split("-");
- dates.push({ iso, label, display: label + " " + parts[2] + "/" + parts[1] + "/" + parts }
+ dates.push({ iso, label, display: label + " " + parts[2] + "/" + parts[1] + "/" + parts[0] });
  }
  return dates;
 }
